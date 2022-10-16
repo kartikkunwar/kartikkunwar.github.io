@@ -12,6 +12,9 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+*{
+  font-family: sans-serif;
+}
 
 .App-header {
   background-color: #282c34;
@@ -35,4 +38,37 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.navlink:hover{
+   color: #c5aa6a;
+}
+.navb{
+  width: 100%;
+  /* height: 70px; */
+  padding: 20px;
+  align-items: center;
+  position: fixed;
+  color:white;
+  top: 0;
+  z-index: 3;
+}
+.navb.active{
+  color: black;
+  background-color: #c5aa6a;
+}
+.navb.active .navlink:hover{
+  color: white;
+}
+.typwrt{
+  font-size: 20px;
+  color: #c5aa6a;
+  font-weight: bold;
+}
+.top{
+  background-image: url("https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=80");
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
 }
