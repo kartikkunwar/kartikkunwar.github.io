@@ -9,26 +9,27 @@ export const Aboutme=()=>{
            <Box>
             <Heading textDecoration='underline' pt='100px'>About me</Heading>
            </Box>
-           <Box  width='70%' margin='auto' mt='100px' display='flex' gap='10%'>
-            <Box  width="30%" display='flex' alignItems='center' justifyContent='center'>
-            <Image
-                borderRadius='full'
-                boxSize='350px'
-                src={img1}
-                alt='Dan Abramov'
-            />
+           <Box  width={{base:"90%",md:"90%",lg:"70%"}} margin='auto' mt='60px' display={{base:"block",md:"block",lg:"flex"}}  gap='10%'>
+            <Box  width="30%" display='flex' alignItems='center' justifyContent='center' margin='auto'>
+                <Image
+                    borderRadius='full'
+                    width={{base:'200px',md:'150px',lg:'300px'}}
+                    height={{base:"100px",md:"200px",lg:'300px'}}
+                    src={img1}
+                    alt='kartik kunwar'
+                />
             </Box>
-            <Box  width="60%" textAlign="start" display='flex'  flexDirection='column' gap="10px">
+            <Box  width={{base:"100%",md:"70%",lg:"60%"}} textAlign="start" display='flex' margin='auto'  flexDirection='column' gap="10px">
                 <Box  mt='10%'><Text fontSize='2xl'>Hi,</Text></Box>
                 <Box  display='flex' gap="10px">
-                    <Text fontSize='20px'>I am Kartik and  </Text>
-                    <Text className="typwrt">
+                    <Text fontSize={{base:'16px',md:'17px',lg:'20px'}} fontWeight='bold'>I am Kartik and </Text>
+                    <Text className="typwrt" fontSize={{base:'16px',md:'17px',lg:'20px'}}>
                         <Typewriter  options={{
                                 autoStart:true,
                                 loop:true,
                                 delay:40,
                                 strings:[
-                                    "I'm a Front End Developer",
+                                    "I'm a Full Stack Web Developer",
                                     "I'm a Problem Solver",
                                     "I'm a Coder"
                                 ]
@@ -36,10 +37,13 @@ export const Aboutme=()=>{
                     </Text>
                     
                 </Box>
-                <Box ><Text>
+                <Box w='100%' ><Text fontSize={{base:'18px',md:'22px',lg:'22px'}}>
                 Aspiring full Stack MERN Developer. I love to make projects which are helpful for masses and serve as a great helpful entity.</Text></Box>
                 </Box>
            </Box>
         </Box>
     )
 }
+
+
+// boxSize={{base:"130px",md:"200px",lg:"300px"}}
